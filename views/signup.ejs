@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container form{
+            padding: 10px;
+            box-shadow: 3px 3px 5px 6px greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <div class="container">
+        <form action="/signup" method="post">
+            <label for="">Name:</label><br>
+            <input type="text" name="name" id=""><br>
+            <label for="">Email:</label><br>
+            <input type="email" name="email" id=""><br>
+            <label for="">Phone:</label><br>
+            <input type="text" name="phone" id=""><br>
+            <label for="">Password:</label><br>
+            <input type="password" name="password" id=""><br><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>
